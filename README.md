@@ -1,6 +1,6 @@
 # Titan vMAX Ultra: System Architecture & Data Validation Hub
 
-**Author / Systems Architect:** [Your Name / GitHub Username]  
+**Author / Systems Architect:** [Mohammed Basith / bashibrosystems]  
 **Development Methodology:** AI-Accelerated Production Engineering (Human Architecture + AI Execution)
 
 ---
