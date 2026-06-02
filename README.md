@@ -16,3 +16,17 @@ Titan vMAX Ultra is a production-grade, high-performance data orchestration, aud
 *   `Cargo.toml`: Central package registry detailing serialized tracking tools, fast numeric conversion logic, and text encoding layers.
 
 ## 📦 System Architecture
+     ┌────────────────────────┐
+     │   Faulty Vendor CSVs   │
+     └───────────┬────────────┘
+                 ▼
+   ┌────────────────────────────┐
+   │   Titan Parallel Engine    │◀─── [Master Catalog]
+   └─────────────┬──────────────┘
+                 │
+        ┌────────┴────────┐
+        ▼                 ▼
+┌────────────────┐┌────────────────┐
+│ Clean Manifest ││ Hospital Repo  │
+│  (Ready Out)   ││  (Quarantine)  │
+└────────────────┘└────────────────┘
